@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de Produtos</h2>
+        <form action="/submit" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="cpf">ID:</label>
+            <input type="text" id="id_produto" name="id_produto" required pattern="\d{3}" title="Insira um ID válido (3 dígitos)">
+
+            <label for="address">Descrição:</label>
+            <input type="text" id="descricao" name="descricao" required>
+
+            <label for="phone">Marca:</label>
+            <input type="tel" id="marca" name="marca" required>
+
+            <label for="address">Quantidade:</label>
+            <input type="text" id="quantidade" name="quantidade" required>
+
+            <label for="address">Preço:</label>
+            <input type="text" id="preco" name="preco" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>
