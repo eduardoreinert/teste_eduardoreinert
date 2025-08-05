@@ -4,6 +4,8 @@ import time
 
 driver=webdriver.Chrome()
 
+# driver.get("http://localhost:8080/teste_eduardoreinert/login.html")
+
 driver.get("file:///C:/Users/eduardo_b_reinert/Documents/GitHub/teste_eduardoreinert/login.html")
 
 time.sleep(1)
